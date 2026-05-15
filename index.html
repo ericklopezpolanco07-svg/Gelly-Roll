@@ -1494,6 +1494,39 @@ function importarGastosDesdeFactura(parsed, fecha){
 // renderAll() is called by onSnapshot listeners after data loads
 // Auth state handled by onAuthStateChanged above
 
+
+// ── EXPOSE FUNCTIONS TO WINDOW (required for type="module") ─────────────────
+if(typeof openModal!=="undefined") window.openModal = openModal;
+if(typeof closeModal!=="undefined") window.closeModal = closeModal;
+if(typeof overlayClick!=="undefined") window.overlayClick = overlayClick;
+if(typeof showView!=="undefined") window.showView = showView;
+if(typeof setOrderFilter!=="undefined") window.setOrderFilter = setOrderFilter;
+if(typeof setInvFilter!=="undefined") window.setInvFilter = setInvFilter;
+if(typeof setGastoFilter!=="undefined") window.setGastoFilter = setGastoFilter;
+if(typeof advanceOrder!=="undefined") window.advanceOrder = advanceOrder;
+if(typeof deleteOrder!=="undefined") window.deleteOrder = deleteOrder;
+if(typeof toggleItem!=="undefined") window.toggleItem = toggleItem;
+if(typeof saveClient!=="undefined") window.saveClient = saveClient;
+if(typeof saveOrder!=="undefined") window.saveOrder = saveOrder;
+if(typeof saveGasto!=="undefined") window.saveGasto = saveGasto;
+if(typeof deleteGasto!=="undefined") window.deleteGasto = deleteGasto;
+if(typeof clearAllData!=="undefined") window.clearAllData = clearAllData;
+if(typeof showAddItem!=="undefined") window.showAddItem = showAddItem;
+if(typeof aiUpdateSizes!=="undefined") window.aiUpdateSizes = aiUpdateSizes;
+if(typeof toggleAddTopping!=="undefined") window.toggleAddTopping = toggleAddTopping;
+if(typeof confirmAddItem!=="undefined") window.confirmAddItem = confirmAddItem;
+if(typeof removeItem!=="undefined") window.removeItem = removeItem;
+if(typeof refreshOrderTotals!=="undefined") window.refreshOrderTotals = refreshOrderTotals;
+if(typeof printInvoice!=="undefined") window.printInvoice = printInvoice;
+if(typeof downloadInvoicePDF!=="undefined") window.downloadInvoicePDF = downloadInvoicePDF;
+if(typeof toggleMateriaField!=="undefined") window.toggleMateriaField = toggleMateriaField;
+if(typeof handleDrop!=="undefined") window.handleDrop = handleDrop;
+if(typeof handleFileSelect!=="undefined") window.handleFileSelect = handleFileSelect;
+if(typeof doLogin!=="undefined") window.doLogin = doLogin;
+if(typeof doLogout!=="undefined") window.doLogout = doLogout;
+if(typeof analyzeInvoiceWithAI!=="undefined") window.analyzeInvoiceWithAI = analyzeInvoiceWithAI;
+if(typeof addGastosFromImport!=="undefined") window.addGastosFromImport = addGastosFromImport;
+if(typeof openImportarModal!=="undefined") window.openImportarModal = openImportarModal;
 </script>
 </body>
 </html>
